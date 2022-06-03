@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+}
+
+.portflow{
+    display: flex;   
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+}
+
+li{
+    cursor: pointer;
+    color: gray;
+}
+
+.portfólio{
+    font-weight: bolder;
+    color: black;
+    font-size: 17px;
+}
+
+.laranja-azul{
+    position: relative;
+}
+
+.laranja-azul img{
+    position: relative;
+    max-width: 1348px;
+}
+
+.txt-laranja{
+    position: absolute;
+    z-index: 5;
+    top: 16vw;
+    left: 12vw;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.txt-laranja h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.txt-laranja p{
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10vh;
+}
+
+.img-main{
+    width: 100%;
+}
+
+.fig-main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 5px;
+}
+
+.fig-main img{
+    width: 300px;
+}
+
+
+
+footer{
+    width: 100%;
+    background: white;
+    margin-top: 75px;
+}
+
+.footer-box{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1215px;
+    background: #f6f6f6;
+    padding: 20px;
+    gap: 30px;
+}
+
+.fig-footer{
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    cursor: pointer;
+    max-width: 1300px;
+    text-align: center;
+}
+
+.div-pai{
+    display:flex;
+}
+
+.txt-footer{
+    display: flex;
+    gap: 30px;
+}
+
+.txt-footer h3{
+    font-size: 20px;
+}
+
+.txt-footer p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.btn-topo{
+    background: #333333;
+    color: #CCCCCC;
+    cursor: pointer;
+    border: 2px solid #707070;
+    display: initial;
+    display: none;
+}
+
+@media(max-width: 869px){
+    .laranja-azul img{
+        right: 800px;
+
+    }
+}
+
+@media(max-width: 604px){
+    .fig1{
+        order: 10;
+    }
+    
+    .fig2{
+        order: 8;
+    }
+    
+    .fig3{
+        order: 3;
+    }
+    
+    .fig4{
+        order: 6;
+    }
+    
+    .fig5{
+        order: 1;
+    }
+    
+    .fig6{
+        order: 7;
+    }
+    .fig7{
+        order: 4;
+    }
+    
+    .fig8{
+        order: 11;
+    }
+    
+    .fig9{
+        order: 9;
+    }
+    .fig10{
+        order: 12;
+    }
+    
+    .fig11{
+        order: 2;
+    }
+    
+    .fig12{
+        order: 5;
+    }
+}
+
+@media(max-width: 600px){
+    .footer-box{
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        padding-bottom: 50px;
+        width: 50px;
+    }
+    
+    .txt-footer{
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .fig-footer{
+        background-color: #7FDBD4;
+    }
+    
+    .btn-topo{
+        display: initial;
+        width: 60px;
+        height: 30px;
+        margin-left: 16px;
+    }
+    
+    .txt-footer p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 580px){
+    .txt-laranja{
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .txt-laranja h1{
+        font-size: 55px;
+    }
+
+    .txt-laranja p{
+        font-size: 20px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .portflow{
+        text-align: center;
+        display: inline-block;
+        margin-left: 100px;
+    }
+}
